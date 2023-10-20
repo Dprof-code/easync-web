@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 :root {
@@ -20,10 +22,6 @@ body {
 h2 {
   text-align: center;
   margin: 2rem;
-}
-
-ul {
-  list-style: none;
 }
 
 .container {
@@ -55,6 +53,10 @@ iframe {
   margin: 1.5rem 0;
 }
 
+.container-fluid {
+  justify-content: space-between;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -70,6 +72,7 @@ iframe {
   color: #fff;
   color: var(--primary-color);
   display: flex;
+  font-size: 1.6rem
 }
 
 .menu-toggle {
@@ -78,32 +81,34 @@ iframe {
 }
 
 .hero {
-  height: 80vh;
+  height: 600px;
+  padding: 20px;
+  margin: 0 40px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
-  padding: 2.5rem;
+  gap: 40px;
 }
 
-.hero-contents {
-  text-align: center;
+.hero-texts {
+  width: 80%;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3.3rem;
+  margin-bottom: 8px;
 }
 
 .hero-desc {
   margin: 2rem 0;
-  padding: 0 5rem;
+  font-size: 1.4rem;
 }
 
-
-.img-content {
-  display: block;
-  margin: 0;
-  text-align: center;
+.banner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .influencer-program-section-content {
@@ -189,6 +194,23 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 884px) {
+  .hero {
+    height: auto;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .hero-texts {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
   img {
     width: 100%;
@@ -226,5 +248,12 @@ footer {
   .video-content {
     flex-direction: column;
     gap: 2rem;
+  }
+}
+
+@media (max-width: 678px) {
+
+  .hero-title {
+    font-size: 2rem;
   }
 }
