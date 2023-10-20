@@ -239,6 +239,10 @@ footer {
   .nav-bar ul li a {
     margin: 20px 0;
   }
+
+  .about {
+    height: auto;
+  }
 }
 
 @media (max-width: 884px) {
