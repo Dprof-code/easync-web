@@ -184,7 +184,7 @@ header {
   justify-content: center;
 }
 
-.banner a {
+.top-banner {
   margin-bottom: 2rem;
 }
 
@@ -314,7 +314,6 @@ header {
 }
 
 .img-content {
-  width: 100%;
   text-align: center;
   margin: 50px auto;
 }
@@ -447,5 +446,14 @@ footer {
 
   .hero-title {
     font-size: 2rem;
+  }
+
+  .about {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .start-btn {
+    margin: 1rem 0;
   }
 }
