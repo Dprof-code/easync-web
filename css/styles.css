@@ -28,6 +28,11 @@ h2 {
   margin: 2rem;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -182,6 +187,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .top-banner {
@@ -406,6 +412,14 @@ footer {
 
   .hero-title {
     font-size: 3rem;
+  }
+
+  .video-content {
+    flex-wrap: wrap;
+  }
+
+  .video-content card {
+    flex: 0 0 50%;
   }
 }
 
