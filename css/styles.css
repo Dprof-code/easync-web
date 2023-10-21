@@ -443,8 +443,12 @@ footer {
     width: 100%;
   }
 
+  .img-content {
+    width: 100%;
+  }
+
   .promocode-img {
-    width: auto;
+    width: 100%;
   }
 }
 
