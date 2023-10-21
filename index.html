@@ -360,6 +360,13 @@
       </div>
     </div>
   </footer>
+
+  <div class="loader-wrapper">
+    <span class="loader">
+      <span class="loader-inner">
+      </span>
+    </span>
+  </div>
   <script>
     window.replainSettings = { id: '1d6da289-28de-46da-a6cd-7447baee3606' };
     (function (u) {
@@ -394,6 +401,11 @@
       navBar = document.querySelector(".nav-bar");
       navBar.classList.toggle("active");
     };
+  </script>
+  <script>
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+    });
   </script>
 </body>
 
