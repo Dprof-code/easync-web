@@ -67,6 +67,7 @@
         <li><a href="#tool-and-guides-for-drop-ship-marketing">Tools & Guides</a></li>
       </ul>
     </nav>
+    
   </header>
 
   <main>
@@ -420,6 +421,14 @@
       console.log("loaded");
       navBar = document.querySelector(".nav-bar");
       navBar.classList.toggle("active");
+
+      if (navBar.classList.contains("active")) {
+      menuIcon.classList.add("fa-times");
+      menuIcon.classList.remove("fa-bars");
+    } else {
+      menuIcon.classList.remove("fa-times");
+      menuIcon.classList.add("fa-bars");
+    }
     };
   </script>
 </body>
