@@ -437,6 +437,10 @@ footer {
   .video-container iframe {
     width: 100%;
   }
+
+  .idea-text {
+    width: 100%;
+  }
 }
 
 @media (max-width: 678px) {
