@@ -411,7 +411,7 @@ footer {
 
 @media (max-width: 768px) {
   img {
-    width: auto;
+    width: 100%;
   }
 
   .container {
@@ -441,6 +441,10 @@ footer {
 
   .idea-text {
     width: 100%;
+  }
+
+  .promocode-img {
+    width: auto;
   }
 }
 
