@@ -153,9 +153,9 @@ a {
   text-decoration: none;
 }
 
-.fa-mooon,
+.fa-moon,
 .fa-sun {
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .fa-bars {
@@ -409,11 +409,11 @@ footer {
     color: var(--secondary-text-color);
     transition: 0.5s;
     overflow: hidden;
-    border: 1px solid var(--secondary-text-color);
   }
 
   .nav-bar.active {
     height: 450px;
+    border: 1px solid var(--secondary-text-color);
   }
 
   .nav-bar ul {
