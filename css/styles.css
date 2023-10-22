@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
+
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -167,6 +167,7 @@ a {
   padding: 10px 25px;
   border-radius: 30px;
   margin: 0 5px;
+  list-style: none;
 }
 
 .nav-bar ul li a {
@@ -295,6 +296,15 @@ a {
   border-bottom: 0px;
 }
 
+.models .card .card-header {
+  padding-top: 2rem;
+  padding-bottom: 4px;
+}
+
+.models .card .card-body {
+  padding-top: 0;
+}
+
 .model-title {
   text-align: left;
   margin: 2rem 0;
@@ -351,6 +361,11 @@ a {
   text-align: justify;
   width: 600px;
   margin: 0 auto;
+}
+
+.services-sites-list {
+  list-style: disc;
+  list-style-type: disc;
 }
 
 #exclusive-promocodes {
@@ -495,6 +510,15 @@ footer {
 
   .idea-text {
     width: 100%;
+  }
+
+  .btn,
+  .start-btn {
+    width: 100%;
+  }
+
+  .models .card {
+    flex: 0 0 100%;
   }
 
   .img-h {
