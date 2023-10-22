@@ -475,8 +475,8 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .fa-bars {
-    display: inline-block;
+  .nav-icons .fa-bars {
+    display: block;
   }
 
   img {
