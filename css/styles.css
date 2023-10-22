@@ -43,6 +43,10 @@ a {
   color: var(--secondary-text-color);
 }
 
+.fa-bars {
+  display: none;
+}
+
 .fa-solid {
   color: var(--anime-color);
   transition: 2s;
