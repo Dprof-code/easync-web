@@ -142,7 +142,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   z-index: 3;
 }
 
@@ -397,15 +396,11 @@ footer {
 }
 
 @media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
+  header {}
 }
 
 @media only screen and (max-width: 1100px) {
-  header {
-    padding: 0 30px;
-  }
+  header {}
 }
 
 @media only screen and (max-width: 900px) {
