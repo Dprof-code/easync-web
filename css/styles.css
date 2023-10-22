@@ -43,8 +43,8 @@ a {
   color: var(--secondary-text-color);
 }
 
-.nav-icons .fa-bars {
-  display: none;
+.fa-bars {
+  visibility: hidden;
 }
 
 .fa-solid {
@@ -159,10 +159,6 @@ a {
 .fa-moon,
 .fa-sun {
   margin-left: 1.5rem;
-}
-
-.nav-icons .fa-bars {
-  display: none;
 }
 
 .nav-bar ul {
@@ -476,7 +472,7 @@ footer {
 
 @media (max-width: 768px) {
   .nav-icons .fa-bars {
-    display: block;
+    visibility: visible;
   }
 
   img {
