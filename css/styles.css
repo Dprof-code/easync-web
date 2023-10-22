@@ -43,7 +43,7 @@ a {
   color: var(--secondary-text-color);
 }
 
-.fa-bars {
+.nav-icons .fa-bars {
   display: none;
 }
 
@@ -161,7 +161,7 @@ a {
   margin-left: 1.5rem;
 }
 
-.fa-bars {
+.nav-icons .fa-bars {
   display: none;
 }
 
