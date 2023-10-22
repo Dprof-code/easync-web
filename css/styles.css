@@ -8,7 +8,15 @@
 
 :root {
   --primary-color: #fff;
-  --secondary-color: #000;
+  --secondary-color: #212121;
+  --secondary-text-color: #000106;
+  --anime-color: #232D3F;
+}
+
+.dark-theme {
+  --primary-color: #212121;
+  --secondary-color: #fff;
+  --secondary-text-color: #fff;
 }
 
 html {
@@ -17,6 +25,8 @@ html {
 
 body {
   font-family: Roboto, sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
 }
 
 main {
@@ -34,7 +44,9 @@ a {
 }
 
 .fa-solid {
+  color: var(--anime-color);
   transition: 2s;
+  cursor: pointer;
 }
 
 .container {
@@ -122,23 +134,28 @@ a {
   }
 }
 
-header {
+.header-contents {
   width: 100%;
   height: 80px;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+
   z-index: 3;
 }
 
 .logo a {
   font-size: 28px;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--anime-color);
   text-decoration: none;
+}
+
+.fa-mooon,
+.fa-sun {
+  margin-left: 1rem;
 }
 
 .fa-bars {
@@ -153,7 +170,7 @@ header {
 }
 
 .nav-bar ul li a {
-  color: var(--primary-color);
+  color: var(--secondary-text-color);
   font-size: 16px;
   display: block;
   margin-right: 7px;
@@ -162,10 +179,12 @@ header {
   transition: 0.2s;
 }
 
+.nav-bar ul li a:hover {
+  color: var(--anime-color);
+}
+
 .hero {
   height: 600px;
-  padding: 20px;
-  margin: 0 40px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -192,6 +211,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.banner {
+  width: 100%;
 }
 
 .top-banner {
@@ -225,13 +248,19 @@ header {
 }
 
 .start-btn {
-  border: 2px solid #fff;
+  border: 2px solid var(--primary-color);
   border-radius: 16px;
   text-align: center;
   padding: 1rem;
   cursor: pointer;
   text-decoration: none;
   color: var(--primary-color);
+  transition: 0.2s;
+}
+
+.start-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--anime-color);
 }
 
 .influencer-program-about {
@@ -302,15 +331,20 @@ header {
 }
 
 .btn {
-  border: 1px solid #000;
+  border: 1px solid var(--secondary-text-color);
   border-radius: 16px;
   text-align: center;
   padding: 1rem;
   cursor: pointer;
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--secondary-text-color);
   background-color: var(--primary-color);
   flex: 0 0 30%;
+}
+
+.btn:hover {
+  background-color: var(--secondary-text-color);
+  color: var(--primary-color);
 }
 
 .idea-text {
@@ -461,12 +495,30 @@ footer {
     width: 100%;
   }
 
+  .img-h {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0px !important;
+  }
+
+  .benefit .row {
+    flex-direction: column-reverse;
+  }
+
   .img-content {
     width: 100%;
   }
 
   .promocode-img {
     width: 100%;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
