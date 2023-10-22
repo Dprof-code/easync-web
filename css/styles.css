@@ -155,7 +155,7 @@ a {
 
 .fa-mooon,
 .fa-sun {
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 .fa-bars {
@@ -409,6 +409,7 @@ footer {
     color: var(--secondary-text-color);
     transition: 0.5s;
     overflow: hidden;
+    border: 1px solid var(--secondary-text-color);
   }
 
   .nav-bar.active {
