@@ -43,10 +43,6 @@ a {
   color: var(--secondary-text-color);
 }
 
-#menu-icon {
-  display: none;
-}
-
 .fa-solid {
   color: var(--anime-color);
   transition: 2s;
@@ -408,9 +404,8 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
-
-  #menu-icon {
-    display: block;
+  .fa-bars {
+    display: inline-block;
   }
 
   .nav-bar {
